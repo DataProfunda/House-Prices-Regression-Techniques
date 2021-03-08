@@ -43,6 +43,10 @@ We should get rid of them.
 
 ![nan](https://user-images.githubusercontent.com/69935274/110354257-43443700-8038-11eb-8507-c35ad54f5ae3.png)
 
+We won't lose much information, because they are not so important, depending on correlation.
+![corra](https://user-images.githubusercontent.com/69935274/110363069-6247c680-8042-11eb-8bfa-4d16186764e2.png)
+
+
 # 3. Map string values to int with dictionary.
 d_full dictionary contains dictionary for each column that has to be mapped.
 ![s3](https://user-images.githubusercontent.com/69935274/101414465-6ac71e80-38e6-11eb-8dcf-e04f7cf1ab1c.png)
