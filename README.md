@@ -51,11 +51,11 @@ We won't lose much information, because they are not so important, depending on 
 d_full dictionary contains dictionary for each column that has to be mapped.
 ![s3](https://user-images.githubusercontent.com/69935274/101414465-6ac71e80-38e6-11eb-8dcf-e04f7cf1ab1c.png)
 # 4. Preprocessing data for training and remove outliers
-NaN values are filled with mean value of each column.
-With MinMaxScaler we normalize values in columns.
-In other words, we scale values to be in the range between 0 and 1.
-For outliers detection I've used GaussianMixture. It deleted 59 rows. 
-Train test split size is set to 0.15.
+NaN values are filled with mean value of each column. <br>
+With MinMaxScaler we normalize values in columns. <br>
+In other words, we scale values to be in the range between 0 and 1. <br>
+For outliers detection I've used GaussianMixture. It deleted 59 rows. <brS>
+Train test split size is set to 0.15. <br>
 
 # 5. MultiRegressor training.
 To use MultiRegressor first we want to make object.
