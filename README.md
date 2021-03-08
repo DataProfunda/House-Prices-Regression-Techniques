@@ -58,11 +58,13 @@ For outliers detection I've used GaussianMixture. It deleted 59 rows. <brS>
 Train test split size is set to 0.15. <br>
 
 # 5. MultiRegressor training.
-To use MultiRegressor first we want to make object.
+To use MultiRegressor first we want to make an object. 
 N_repetition we set to 10.
-We want to train all of the Regressors so we don't set up regressors argument.
-Because we use GridSearchCv after code run I suggest to make some coffee, because it can take several minutes to end.
+We want to train all of the Regressors so we don't set up regressors argument. <br>
+Evaluate funtion after training will list mse of regressors.
+![sea](https://user-images.githubusercontent.com/69935274/110364594-404f4380-8044-11eb-80e4-de0dd94ccd59.png)
 
+Because we use GridSearchCv after code run I suggest to make some coffee, because it can take several minutes to end.
 
 # 6. Preprocessing data for testing.
 Variable dropped_columns was defined to drop same columns as in the training data 
@@ -72,5 +74,5 @@ To predict and save submission I've used predict_save() funtion in MultiRegresso
 
 # Conclusions
 There are a lot of things that I could do better. Order of the categorical data could retain some more information, but with auto-mapping we sacrifise it for the time save. Other notebooks that I've read, spend more time on feature engineering. They usually produce better results.  
-Although we splitted data, when we set big n_repetition overfitting occur. I think KFold would produce better results.
+Although we splitted data, when we set big n_repetition overfitting occurs. I think KFold would produce better results.
 My best RMSE score is 0.149.
