@@ -61,10 +61,9 @@ Train test split size is set to 0.15.
 To use MultiRegressor first we want to make object.
 N_repetition we set to 10.
 We want to train all of the Regressors so we don't set up regressors argument.
+Because we use GridSearchCv after code run I suggest to make some coffee, because it can take several minutes to end.
 
 
-
-![s5](https://user-images.githubusercontent.com/69935274/101414500-79add100-38e6-11eb-947b-a318cfe9dc5a.png)
 # 6. Preprocessing data for testing.
 Variable dropped_columns was defined to drop same columns as in the training data 
 ![s6](https://user-images.githubusercontent.com/69935274/101414514-82060c00-38e6-11eb-8095-b75eb87bae82.png)
