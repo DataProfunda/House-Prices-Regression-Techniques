@@ -67,10 +67,14 @@ Evaluate funtion after training will list mse of regressors.
 Because we use GridSearchCv after code run I suggest to make some coffee, because it can take several minutes to end.
 
 # 6. Preprocessing data for testing.
-Variable dropped_columns was defined to drop same columns as in the training data 
-![s6](https://user-images.githubusercontent.com/69935274/101414514-82060c00-38e6-11eb-8095-b75eb87bae82.png)
+With dropped_columns we can drop same columns in the test data
+
+![zcp](https://user-images.githubusercontent.com/69935274/110365298-29f5b780-8045-11eb-8024-66cb29c2df7e.png)
+
 # 7. Predicting house price for unseen rows.
 To predict and save submission I've used predict_save() funtion in MultiRegressors
+
+![ssaa](https://user-images.githubusercontent.com/69935274/110365451-5a3d5600-8045-11eb-97bf-be171f7a34ae.png)
 
 # Conclusions
 There are a lot of things that I could do better. Order of the categorical data could retain some more information, but with auto-mapping we sacrifise it for the time save. Other notebooks that I've read, spend more time on feature engineering. They usually produce better results.  
