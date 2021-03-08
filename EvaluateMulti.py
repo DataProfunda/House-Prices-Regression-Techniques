@@ -11,7 +11,7 @@ from sklearn.mixture import GaussianMixture
 # 1. Read training data.
 #########################################################################
 data = pd.read_csv('train.csv')
-
+data = data.drop('Id',axis=1)
 data_prep = data.copy() #Data to preprocess
 
 #########################################################################
@@ -20,7 +20,7 @@ data_prep = data.copy() #Data to preprocess
 
 dropped_columns = []
 
-dropped_columns = ['Id','Fence','Alley','MiscFeature','PoolQC']
+dropped_columns = ['Fence','Alley','MiscFeature','PoolQC']
 data_prep = data_prep.drop(dropped_columns, axis=1)
 
 '''
