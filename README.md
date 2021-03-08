@@ -72,4 +72,5 @@ To predict and save submission I've used predict_save() funtion in MultiRegresso
 
 # Conclusions
 There are a lot of things that I could do better. Order of the categorical data could retain some more information, but with auto-mapping we sacrifise it for the time save. Other notebooks that I've read, spend more time on feature engineering. They usually produce better results.  
-Although we splitted data, when we set big n_repetition overfitting occur. I think KFold would produce better results.    
+Although we splitted data, when we set big n_repetition overfitting occur. I think KFold would produce better results.
+My best RMSE score is 0.149.
