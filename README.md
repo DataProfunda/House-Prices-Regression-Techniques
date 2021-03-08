@@ -51,7 +51,8 @@ NaN values are filled with mean value of each column.
 With MinMaxScaler we normalize values in columns. In other words, we scale values to be in the range between 0 and 1.
 For outliers detection I've used GaussianMixture. It deleted 59 rows. 
 
-# 5. Neural Network modeling, compilation and training.
+# 5. MultiRegressor modeling, compilation and training.
+
 ![s5](https://user-images.githubusercontent.com/69935274/101414500-79add100-38e6-11eb-947b-a318cfe9dc5a.png)
 # 6. Preprocessing data for testing.
 Variable dropped_columns was defined to drop same columns as in training data 
