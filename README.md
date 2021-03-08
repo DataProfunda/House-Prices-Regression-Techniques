@@ -77,6 +77,6 @@ To predict and save submission I've used predict_save() funtion in MultiRegresso
 ![ssaa](https://user-images.githubusercontent.com/69935274/110365451-5a3d5600-8045-11eb-97bf-be171f7a34ae.png)
 
 # Conclusions
-There are a lot of things that I could do better. Order of the categorical data could retain some more information, but with auto-mapping we sacrifise it for the time save. Other notebooks that I've read, spend more time on feature engineering. They usually produce better results.  
+There are a lot of things that I could do better. Order of the categorical data could retain some more information, but with auto-mapping we sacrifise it for the time saving. Other notebooks that I've read, spend more time on feature engineering. They usually produce better results.  
 Although we splitted data, when we set big n_repetition overfitting occurs. I think KFold would produce better results.
 My best RMSE score is 0.149.
