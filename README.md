@@ -48,14 +48,25 @@ d_full dictionary contains dictionary for each column that has to be mapped.
 ![s3](https://user-images.githubusercontent.com/69935274/101414465-6ac71e80-38e6-11eb-8dcf-e04f7cf1ab1c.png)
 # 4. Preprocessing data for training and remove outliers
 NaN values are filled with mean value of each column.
-With MinMaxScaler we normalize values in columns. In other words, we scale values to be in the range between 0 and 1.
+With MinMaxScaler we normalize values in columns.
+In other words, we scale values to be in the range between 0 and 1.
 For outliers detection I've used GaussianMixture. It deleted 59 rows. 
+Train test split size is set to 0.15.
 
-# 5. MultiRegressor modeling, compilation and training.
+# 5. MultiRegressor training.
+To use MultiRegressor first we want to make object.
+N_repetition we set to 10.
+We want to train all of the Regressors so we don't set up regressors argument.
+
+
 
 ![s5](https://user-images.githubusercontent.com/69935274/101414500-79add100-38e6-11eb-947b-a318cfe9dc5a.png)
 # 6. Preprocessing data for testing.
-Variable dropped_columns was defined to drop same columns as in training data 
+Variable dropped_columns was defined to drop same columns as in the training data 
 ![s6](https://user-images.githubusercontent.com/69935274/101414514-82060c00-38e6-11eb-8095-b75eb87bae82.png)
 # 7. Predicting house price for unseen rows.
-![s7](https://user-images.githubusercontent.com/69935274/101414525-87fbed00-38e6-11eb-8827-b6cb16d597a9.png)
+To predict and save submission I've used predict_save() funtion in MultiRegressors
+
+# Conclusions
+There are a lot of things that I could do better. Order of the categorical data could retain some more information, but with auto-mapping we sacrifise it for the time save. Other notebooks that I've read, spend more time on feature engineering. They usually produce better results.  
+Although we splitted data, when we set big n_repetition overfitting occur. I think KFold would produce better results.    
