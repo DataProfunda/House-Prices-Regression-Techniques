@@ -24,7 +24,7 @@ I also want to use MultiRegressorModule in future projects, so I decided to add 
 
 -compile_fit() - compile all of regressors and fit with train data <br>
 -evaluate() - evaluate regressors on test data <br>
--save_model() -  <br>
+-save_models()  <br>
 -fit_with_test_data() - fit with test data. I do not recommend using it in this project <br>
 -load_models() <br>
 -predict_save() <br>
