@@ -16,8 +16,8 @@ It's an incredible alternative for data scientists looking for a modernized and 
 
 
 This project contains two Python files: <br>
-EvaluateMulti.py - basic preprocessing, fill Nan values, detect and remove outliers, train/test split, MultiRegressor compile and fit <br>
-MultiRegressorModule.py - MultiRegressor class contains RandomForestRegressor, ExtraTreesRegressor, XGBRegressor, VotingRegressor. <br>
+EvaluateMulti.py - basic preprocessing, fill Nan values, detect and remove outliers, train/test split, MultiRegressor compile and fit. <br>
+MultiRegressorModule.py - MultiRegressor class contains RandomForestRegressor, ExtraTreesRegressor, XGBRegressor, VotingRegressor . <br>
 
 In this project I wanted to try out  regression techniques I've learnt recently. For customizing Regressors I've created MultiRegressorModule, that contains class MultiRegressor. 
 I also want to use MultiRegressorModule in future projects, so I decided to add funtions such as:
